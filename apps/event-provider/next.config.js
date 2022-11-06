@@ -14,7 +14,7 @@ module.exports = {
         headers: [
           {
             key: 'X-Frame-Options',
-            value: 'ALLOW-FROM *'
+            value: 'ALLOW-FROM localhost'
           }
         ],
       },

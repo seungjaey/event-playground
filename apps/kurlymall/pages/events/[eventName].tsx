@@ -123,9 +123,10 @@ const EventDetailPage = () => {
   }
 
   useEffect(() => {
+    document.domain = 'localhost'
     window.addEventListener('message', handleMessage)
     return () => {
-      window.removeEventListener('message', handleMessage);
+      window.removeEventListener('message', handleMessage)
     }
   }, [])
 

@@ -70,6 +70,7 @@ const FirstEventPage = () => {
   }, [])
 
   useEffect(() => {
+    document.domain = 'localhost'
     const wrapper = wrapperRef.current
     if (!wrapper) {
       return
